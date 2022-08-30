@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.adiverse.erp.controller;
 
 import java.util.*;
 
@@ -18,10 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-//import com.example.demo.academic.AcademicInformation;
-import com.example.demo.academic.BasicProfile;
-
-import com.example.demo.repository.BasicRepository;
+import com.adiverse.erp.model.BasicProfile;
+import com.adiverse.erp.repository.BasicRepository;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController

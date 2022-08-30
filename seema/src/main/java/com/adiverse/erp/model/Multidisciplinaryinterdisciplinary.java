@@ -1,4 +1,4 @@
-package com.example.demo.academic;
+package com.adiverse.erp.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

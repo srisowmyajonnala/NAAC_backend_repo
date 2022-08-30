@@ -1,10 +1,10 @@
-package com.example.demo.repository;
+package com.adiverse.erp.repository;
 
 //import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.academic.basicprofile_2;
+import com.adiverse.erp.model.basicprofile_2;
 
 
 public interface BasicProfileRepository extends JpaRepository<basicprofile_2,Long>

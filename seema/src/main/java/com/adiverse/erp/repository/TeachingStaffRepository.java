@@ -1,8 +1,8 @@
-package com.example.demo.repository;
+package com.adiverse.erp.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.academic.AcademicTeachingStaff;
+import com.adiverse.erp.model.AcademicTeachingStaff;
 
 public interface TeachingStaffRepository extends JpaRepository<AcademicTeachingStaff,Long>
 {

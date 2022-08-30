@@ -1,10 +1,10 @@
-package com.example.demo.repository;
+package com.adiverse.erp.repository;
 
 //import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.academic.AcademicInstitution;
+import com.adiverse.erp.model.AcademicInstitution;
 
 
 

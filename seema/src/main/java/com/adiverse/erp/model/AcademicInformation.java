@@ -1,4 +1,4 @@
-package com.example.demo.academic;
+package com.adiverse.erp.model;
 
 import java.util.*;
 
@@ -71,6 +71,14 @@ public class AcademicInformation
 	  @OneToMany(targetEntity=AcademicTeachingStaff.class,cascade=CascadeType.ALL)
 	  @JoinColumn(name="tq_fk",referencedColumnName="college_id")
 	  private List<AcademicTeachingStaff> academicTeachingStaff;
+	  
+	  @OneToMany(targetEntity=AcademicStudentsEnrolled.class,cascade=CascadeType.ALL)
+	  @JoinColumn(name="ase_fk",referencedColumnName="college_id")
+	  private List<AcademicStudentsEnrolled> academicstudentsEnrolled;
+	  
+	  @OneToMany(targetEntity=AcademicStudentsAdmitted.class,cascade=CascadeType.ALL)
+	  @JoinColumn(name="asa_fk",referencedColumnName="college_id")
+	  private List<AcademicStudentsAdmitted> academicstudentsAdmitted;
 
 	public long getCollege_id() {
 		return college_id;

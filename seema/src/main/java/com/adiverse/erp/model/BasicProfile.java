@@ -1,4 +1,4 @@
-package com.example.demo.academic;
+package com.adiverse.erp.model;
 
 
 import java.util.List;
@@ -12,8 +12,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
-
 
 @Entity
 @Table(name="basic_profile")
@@ -102,7 +100,19 @@ public class BasicProfile
 		  @OneToMany(targetEntity=Campus.class,cascade=CascadeType.ALL)
 		  @JoinColumn(name="cp_fk",referencedColumnName="basicprop_id")
 		  private List<Campus> campus;
-	
+		  
+		  @OneToMany(targetEntity=AcademicInformation.class,cascade=CascadeType.ALL)
+		  @JoinColumn(name="ai_fk",referencedColumnName="basicprop_id")
+		  private List<AcademicInformation> academicinformation;
+		  
+		  
+		  @OneToMany(targetEntity=Multidisciplinaryinterdisciplinary.class,cascade=CascadeType.ALL)
+		  @JoinColumn(name="mi_fk",referencedColumnName="basicprop_id")
+		  private List<Multidisciplinaryinterdisciplinary> multidisciplinaryInterdisciplinary;
+		  
+		  @OneToMany(targetEntity=ExtendedProfile.class,cascade=CascadeType.ALL)
+		  @JoinColumn(name="ep_fk",referencedColumnName="basicprop_id")
+		  private List<ExtendedProfile> extendedProfile;
 		
 		public long getBasicprop_id() {
 			return basicprop_id;
