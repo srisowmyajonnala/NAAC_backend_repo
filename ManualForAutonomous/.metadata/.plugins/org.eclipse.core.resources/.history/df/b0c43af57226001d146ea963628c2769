@@ -1,0 +1,7 @@
+package Autonoums.repository;
+
+public interface ExtendedProfileRepository extends JpaRepository<ExtendedProfile,Long> {
+
+	List<ExtendedProfile>findByExtendedProfileContaining(String extended programmeYear);
+	
+}

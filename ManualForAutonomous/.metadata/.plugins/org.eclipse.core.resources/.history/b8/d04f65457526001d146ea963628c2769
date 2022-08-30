@@ -1,0 +1,298 @@
+package Autonoums;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+
+@Entity
+@Table(name="extendedprofile")
+public class ExtendedProfile {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="collegeId")
+	private long college_id;
+
+	@Column(name="programmeYear")
+	private String programme_year;
+	
+	@Column(name="programmeNumber")
+	private String programme_number;
+	
+	@Column(name="studentYear")
+	private String student_year;
+	
+	@Column(name="studentNumberLast")
+	private String student_number_last;
+	
+	@Column(name="studentOutgoingYear")
+	private String student_outgoing;
+	
+	@Column(name="studentFinalyearNumber")
+	private String student_final;
+	
+	@Column(name="studentAppearedExaminationyear")
+	private String student_appeared_examination;
+	
+	@Column(name="student_examination_insitutenumber")
+	private String studentexamination;
+	
+	@Column(name="studentRevalutionyear")
+	private String student_revalution;
+	
+	@Column(name="studentapplicationnumber")
+	private String student_application;
+	
+    @Column(name="academicCourseyear")
+     private String academic_course;
+    
+    @Column(name="academicProgrammernumber")
+    private String academic_programmer;
+    
+    @Column(name="academicfulltimeYear")
+    private String academictime_year;
+    
+    @Column(name="academicteacherNumber")
+    private String academicteacher_number;
+    
+    @Column(name="academicSanctionedyear")
+    private String sanctioned_sanctioned;
+    
+    @Column(name="academicPostnumber")
+    private String academic_post;
+    
+    @Column(name="institutionApplicationReceivedyear")
+    private String year_application;
+    
+    @Column(name="institionadmissionNumber")
+    private String institionaladmission_number;
+    
+    @Column(name="institutionearnmarksYear")
+    private String institutionearnmarks_year;
+    
+    @Column(name= "institutionCategornumber")
+    private String institution_categornumber;
+  
+    @Column(name="classroomsSeminarhalls")
+    private String classrooms_seminar;
+    
+   @Column(name="campusforacademicPurpose")
+   private String campusforacademic_purpose;
+   
+   @Column(name="totalyearExpenditureyear")
+   private String totalyear_expenditureyear;
+   
+   @Column(name="totalnumberSalarynumber")
+   private String totalnumber_salarynumber;
+
+public long getCollege_id() {
+	return college_id;
+}
+
+public void setCollege_id(long college_id) {
+	this.college_id = college_id;
+}
+
+public String getProgramme_year() {
+	return programme_year;
+}
+
+public void setProgramme_year(String programme_year) {
+	this.programme_year = programme_year;
+}
+
+public String getProgramme_number() {
+	return programme_number;
+}
+
+public void setProgramme_number(String programme_number) {
+	this.programme_number = programme_number;
+}
+
+public String getStudent_year() {
+	return student_year;
+}
+
+public void setStudent_year(String student_year) {
+	this.student_year = student_year;
+}
+
+public String getStudent_number_last() {
+	return student_number_last;
+}
+
+public void setStudent_number_last(String student_number_last) {
+	this.student_number_last = student_number_last;
+}
+
+public String getStudent_outgoing() {
+	return student_outgoing;
+}
+
+public void setStudent_outgoing(String student_outgoing) {
+	this.student_outgoing = student_outgoing;
+}
+
+public String getStudent_final() {
+	return student_final;
+}
+
+public void setStudent_final(String student_final) {
+	this.student_final = student_final;
+}
+
+public String getStudent_appeared_examination() {
+	return student_appeared_examination;
+}
+
+public void setStudent_appeared_examination(String student_appeared_examination) {
+	this.student_appeared_examination = student_appeared_examination;
+}
+
+public String getStudentexamination() {
+	return studentexamination;
+}
+
+public void setStudentexamination(String studentexamination) {
+	this.studentexamination = studentexamination;
+}
+
+public String getStudent_revalution() {
+	return student_revalution;
+}
+
+public void setStudent_revalution(String student_revalution) {
+	this.student_revalution = student_revalution;
+}
+
+public String getStudent_application() {
+	return student_application;
+}
+
+public void setStudent_application(String student_application) {
+	this.student_application = student_application;
+}
+
+public String getAcademic_course() {
+	return academic_course;
+}
+
+public void setAcademic_course(String academic_course) {
+	this.academic_course = academic_course;
+}
+
+public String getAcademic_programmer() {
+	return academic_programmer;
+}
+
+public void setAcademic_programmer(String academic_programmer) {
+	this.academic_programmer = academic_programmer;
+}
+
+public String getAcademictime_year() {
+	return academictime_year;
+}
+
+public void setAcademictime_year(String academictime_year) {
+	this.academictime_year = academictime_year;
+}
+
+public String getAcademicteacher_number() {
+	return academicteacher_number;
+}
+
+public void setAcademicteacher_number(String academicteacher_number) {
+	this.academicteacher_number = academicteacher_number;
+}
+
+public String getSanctioned_sanctioned() {
+	return sanctioned_sanctioned;
+}
+
+public void setSanctioned_sanctioned(String sanctioned_sanctioned) {
+	this.sanctioned_sanctioned = sanctioned_sanctioned;
+}
+
+public String getAcademic_post() {
+	return academic_post;
+}
+
+public void setAcademic_post(String academic_post) {
+	this.academic_post = academic_post;
+}
+
+public String getYear_application() {
+	return year_application;
+}
+
+public void setYear_application(String year_application) {
+	this.year_application = year_application;
+}
+
+public String getInstitionaladmission_number() {
+	return institionaladmission_number;
+}
+
+public void setInstitionaladmission_number(String institionaladmission_number) {
+	this.institionaladmission_number = institionaladmission_number;
+}
+
+public String getInstitutionearnmarks_year() {
+	return institutionearnmarks_year;
+}
+
+public void setInstitutionearnmarks_year(String institutionearnmarks_year) {
+	this.institutionearnmarks_year = institutionearnmarks_year;
+}
+
+public String getInstitution_categornumber() {
+	return institution_categornumber;
+}
+
+public void setInstitution_categornumber(String institution_categornumber) {
+	this.institution_categornumber = institution_categornumber;
+}
+
+public String getClassrooms_seminar() {
+	return classrooms_seminar;
+}
+
+public void setClassrooms_seminar(String classrooms_seminar) {
+	this.classrooms_seminar = classrooms_seminar;
+}
+
+public String getCampusforacademic_purpose() {
+	return campusforacademic_purpose;
+}
+
+public void setCampusforacademic_purpose(String campusforacademic_purpose) {
+	this.campusforacademic_purpose = campusforacademic_purpose;
+}
+
+public String getTotalyear_expenditureyear() {
+	return totalyear_expenditureyear;
+}
+
+public void setTotalyear_expenditureyear(String totalyear_expenditureyear) {
+	this.totalyear_expenditureyear = totalyear_expenditureyear;
+}
+
+public String getTotalnumber_salarynumber() {
+	return totalnumber_salarynumber;
+}
+
+public void setTotalnumber_salarynumber(String totalnumber_salarynumber) {
+	this.totalnumber_salarynumber = totalnumber_salarynumber;
+}
+	
+	
+	
+}

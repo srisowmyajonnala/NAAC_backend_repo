@@ -1,0 +1,6 @@
+package Autonoums.repository;
+
+public interface ExtendedProfileRepository {
+	
+
+}

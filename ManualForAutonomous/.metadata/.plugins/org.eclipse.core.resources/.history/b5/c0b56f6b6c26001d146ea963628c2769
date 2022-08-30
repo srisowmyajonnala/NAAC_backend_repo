@@ -1,0 +1,88 @@
+package Autonoums;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Entity
+public class Extendedprof {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="college_id")
+	private long college_id;
+
+	@Column(name="programme_Year")
+	private String programmeyear;
+	@Column(name="programme_Number")
+	private String programmenumber;
+	
+	@Column(name="student_year")
+	private String studentyear;
+	@Column(name="student_numberlast")
+	private String studentnumberlast;
+	
+	@Column(name="student_outgoingyear")
+	private String studentoutgoing;
+	@Column(name="student_finalyearnumber")
+	private String studentfinal;
+	
+	@Column(name="student_appeared_examinationyear")
+	private String studentappearedexamination;
+	@Column(name="student_examination_insitutenumber")
+	private String studentexamination;
+	
+	@Column(name="student_revalutionyear")
+	private String studentrevalution;
+	@Column(name="student_applicationnumber")
+	private String application;
+	
+    @Column(name="academic_courseyear")
+     private String academiccourse;
+    @Column(name="academic_programmernumber")
+    private String academicprogrammer;
+    
+    @Column(name="academic_fulltimeyear")
+    private String academictime;
+    @Column(name="academic_teachernumber")
+    private String academicteacher;
+    
+    @Column(name="academic_sanctionedyear")
+    private String sanctioned;
+    @Column(name="academic_postnumber")
+    private String academicpost;
+    
+    @Column(name="institution_application_receivedyear")
+    private String yearapplication;
+    @Column(name="instition_admissionnumber")
+    private String admission;
+    
+    @Column(name="institution_earnmarksyear")
+    private String yearearnmarks;
+    @Column(name= "institution_categornumber")
+    private String institutenumber;
+  
+    @Column(name="classroomsseminarhalls")
+    private String classrooms;
+    
+   @Column(name="campusforacademicpurpose")
+   private String campusforacademic;
+   
+   @Column(name="totalyear_expenditureyear")
+   private String totalyear;
+   @Column(name="totalnumber_salarynumber")
+   private String totalsalary;
+	
+	
+	
+}
